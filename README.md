@@ -1,4 +1,4 @@
-# ♿ Differently-Abled Helpdesk
+# ♿ AccessAble | For the Differently-Abled
 
 A plug-and-play accessibility dashboard that helps users discover:
 - ✅ Disability-inclusive job listings
