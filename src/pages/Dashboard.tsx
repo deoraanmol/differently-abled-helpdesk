@@ -16,7 +16,7 @@ const Dashboard = async () => {
     ]);
     return (
         <main className="p-6">
-            <h1 className="text-3xl font-bold mb-6">Disability Accessibility Dashboard</h1>
+            <h1 className="text-3xl font-bold mb-6">AccessAble - Helpdesk for the differently-abled</h1>
 
             <section className="mb-8">
                 <h2 className="text-2xl mb-4">Job Listings (from Adzuna)</h2>
