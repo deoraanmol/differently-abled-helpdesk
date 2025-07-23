@@ -36,11 +36,13 @@ A plug-and-play accessibility dashboard that helps users discover:
 ---
 
 ## 📁 Folder Structure
+```plaintext
 src/
-├── components/ # UI blocks
-├── lib/apis/ # API integrations
-├── app/ # Routes (Next.js App Router)
-├── styles/ # Tailwind & global styles
+├── components/        # UI blocks
+├── lib/apis/          # API integrations
+├── app/               # Next.js App Router pages/routes
+└── styles/            # Tailwind & global styles
+```
 
 ## 🧪 Running Locally
 
