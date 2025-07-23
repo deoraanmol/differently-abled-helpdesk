@@ -3,13 +3,14 @@
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import React from 'react';
 import { Location } from "@/types/Location";
+import { LatLngExpression } from "leaflet";
 
 interface Props {
     locations: Location[];
 }
 
 const AccessibleLocationsMap: React.FC<Props> = ({ locations }) => {
-    const center = [-33.8688, 151.2093]; // Sydney coordinates
+    const center: LatLngExpression = { lat: -33.8688, lng: 151.2093 }; // Sydney coordinates
 
     return (
         <div className="h-[400px] rounded shadow overflow-hidden">
