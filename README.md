@@ -1,5 +1,7 @@
 # ♿ AccessAble | For the Differently-Abled
 
+![screenshot](public/accessable_snapshot.png)
+
 A plug-and-play accessibility dashboard that helps users discover:
 - ✅ Disability-inclusive job listings
 - ✅ Accessible locations and toilets
