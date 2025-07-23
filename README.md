@@ -8,7 +8,7 @@ A plug-and-play accessibility dashboard that helps users discover:
 - ✅ Latest news & articles around accessibility
 
 
-[![Live](https://img.shields.io/website?url=https%3A%2F%2Fdifferently-abled-helpdesk.vercel.app&label=Live&style=flat-square&color=green)](https://differently-abled-helpdesk.vercel.app)
+[![Live](https://img.shields.io/website?url=https%3A%2F%2Faccessable.vercel.app&label=Live&style=flat-square&color=green)](https://accessable.vercel.app/)
 
 🔗 **Live Site**: [https://differently-abled-helpdesk.vercel.app](https://differently-abled-helpdesk.vercel.app)
 
