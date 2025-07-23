@@ -1,4 +1,6 @@
 // todo anmol - make the city selectable from Dashboard
+import { OverpassResult } from "@/types/OverpassResult";
+
 export async function fetchAccessibleLocations(city = 'Sydney') {
     // Overpass API query for wheelchair=yes POIs in city bounding box
     // For simplicity, let's fetch a small bounding box around Sydney
@@ -59,19 +61,6 @@ export const fetchCountForDate = async (date: string) => {
     return data?.elements?.[0]?.tags?.total || 0;
 };
 
-
-export async function fetchAccessibilityTrends(days: number = 30) {
-    const dates = getLastNDates(2);
-    const res = await Promise.all(
-        dates.map(async date => {
-            const count = await fetchCountForDate(date);
-            return {date, accessibleLocations: count};
-        })
-    );
-    console.log("here: "+JSON.stringify(res))
-    return res;
-}
-
 export async function fetchWheelchairToilets(lat = -34.0700, lon = 150.7900, radius = 1000) {
     const query = `
     [out:json][timeout:25];
@@ -97,7 +86,7 @@ export async function fetchWheelchairToilets(lat = -34.0700, lon = 150.7900, rad
 
         const data = await res.json();
 
-        const places = data.elements.map((el: any, index: number) => ({
+        const places = data.elements.map((el: OverpassResult, index: number) => ({
             id: el.id,
             name: el.tags?.name || `Toilet ${index+1}`,
             lat: el.lat || el.center?.lat,

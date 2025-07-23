@@ -2,13 +2,7 @@
 
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import React from 'react';
-
-interface Location {
-    id: number;
-    lat: number;
-    lon: number;
-    tags?: { [key: string]: string };
-}
+import { Location } from "@/types/Location";
 
 interface Props {
     locations: Location[];

@@ -1,4 +1,6 @@
 // todo anmol - make the searchTerms a dropdown in Dashboard (terms should focus on differently-abled)
+import { Job } from "@/types/Job";
+
 export async function fetchDisabilityJobs(searchTerm = 'disability') {
     const appId = process.env.ADZUNA_APP_ID;
     const appKey = process.env.ADZUNA_APP_KEY;
@@ -11,7 +13,7 @@ export async function fetchDisabilityJobs(searchTerm = 'disability') {
         if (!res.ok) throw new Error(`[Adzuna API] Failed with status ${res.status}`);
 
         const data = await res.json();
-        return data.results.map((job: any) => ({
+        return data.results.map((job: Job) => ({
             title: job.title,
             company: job.company.display_name,
             location: job.location.display_name,
